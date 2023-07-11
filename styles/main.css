@@ -5,7 +5,8 @@
 
 /* Modules */
 @import 'modules/menu.css';
-
+@import 'modules/find.css';
+@import 'modules/filters.css';
 
 /* Design System */
 :root {
@@ -59,98 +60,8 @@ nav a:hover {
    color: var(--blue);
 }
 /*main*/
-/*find*/
-#find {
-   display: flex;
-   flex-direction: column;
-   margin: 31px 20px 0px 21px;
-}
-#find h1 {   
-   margin: 0;
-   font-size: var(--big-font-size);
-}
-#find p {
-   margin: 13px 0px 36px 0px;
-}
-#search-bar {
-   width: 406px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   text-align: center;
-   position: relative;
-   background: var(--white);
-   border: 1px solid var(--light-grey);
-   border-radius: 15px;
-}
-#loc {
-   position: relative;
-   padding: 16px 15px 16px 18px;
-   color:var(--black);
-   background-color: var(--light-grey);
-   border: 1px solid var(--light-grey);
-   border-radius: 15px 0px 0px 15px;
-}
-#marseille {
-   position: absolute;
-   margin: 14px 0px 14px 66px;
-   width: 163px;
-   height: 21px;
-   font-size: var(--middle-font-size);
-   font-weight: var(--special-font-weight);
-   border: none; 
-}
-#magn-glass {
-   display: none;
-   position: relative;
-   padding: 15px 16px 15px 16px;
-   width: 50px;
-   font-size: 17px;
-   color:var(--white);
-   background-color: var(--blue);
-   border: 1px solid var(--blue);
-   border-radius: 0px 15px 15px 0px;  
-}
-#search {
-   display: block;
-   position: absolute;
-   width: 132px;
-   margin-left: 303px;
-   padding: 14px 16px 14px 16px;
-   font-size: var(--middle-font-size);
-   font-weight: var(--special-font-weight);
-   color:var(--white);
-   background-color: var(--blue);
-   border: 1px solid var(--blue);
-   border-radius: 0px 15px 15px 0px;
-   text-align: center; 
-}
-/*filters*/
-#filter {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin: 34px 20px 0px 20px;
-}
-#filter h2 {
-   font-size: var(--middle-font-size);
-   margin: 7px 13px 7px 0px;
-}
-.icon {
-   font-size: 15px;
-   color: var(--blue);
-}
-.btn {
-   font-weight: var(--special-font-weight);
-   background: var(--white);
-   border: 2px solid var(--grey);
-   border-radius: 25px;
-   margin: 7px 0px 7px 0px;
-   padding: 13px;
-}
-.btn:hover {
-   box-shadow: 0px 3px 10px 1px var(--blue);
-}
+
+
 /*info*/
 #info {
    display: flex;

@@ -1,0 +1,26 @@
+/*filters*/
+#filter {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin: 34px 20px 0px 20px;
+}
+#filter h2 {
+font-size: var(--middle-font-size);
+margin: 7px 13px 7px 0px;
+}
+.icon {
+font-size: 15px;
+color: var(--blue);
+}
+.btn {
+font-weight: var(--special-font-weight);
+background: var(--white);
+border: 2px solid var(--grey);
+border-radius: 25px;
+margin: 7px 0px 7px 0px;
+padding: 13px;
+}
+.btn:hover {
+box-shadow: 0px 3px 10px 1px var(--blue);
+}
