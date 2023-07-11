@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Pages */
+@import 'pages';
+
+/* Modules */
+@import 'modules/menu.css';
+
+
 /* Design System */
 :root {
    /* Colors */
@@ -17,7 +26,6 @@
    --normal-font-size: 16px;
    --small-font-size: 13px;
 }
-
 
 * {
    box-sizing: border-box;
@@ -45,36 +53,7 @@ nav {
 nav img {
    width: 61.09px;
    height: 19px;
-   margin: 44px 0px 0px 20px
-}
-#menu {
-   width: 325px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   text-align: center;
-}
-.stays {
-   width: 50%;
-   border-top: 3px solid var(--white);
-   border-bottom: none;
-   padding-top: 44px;
-   padding-bottom: 0px;
-}
-.stays:hover {
-   border-bottom: none;
-   border-top: 3px solid var(--blue);
-}
-.activities {
-   width: 50%;
-   border-top: 3px solid var(--white);
-   border-bottom: none;
-   padding-top: 44px;
-   padding-bottom: 0px;
-}
-.activities:hover {
-   border-bottom: none;
-   border-top: 3px solid var(--blue);
+   margin: 44px 0px 0px 20px;
 }
 nav a:hover {
    color: var(--blue);
@@ -201,7 +180,7 @@ nav a:hover {
    flex-direction: column;
    background-color: var(--light-grey);
    border-radius: 20px;
-   margin: 0px 20px 0px 20px 
+   margin: 0px 20px 0px 20px;
 }
 .head {
    display: flex;
@@ -350,7 +329,7 @@ nav a:hover {
 footer {
    background-color: var(--light-grey);
    display: flex;
-   margin: 30px 20px 0px 20px 
+   margin: 30px 20px 0px 20px;
 }
 #footer-items {
    width: 942px;
@@ -529,7 +508,7 @@ footer {
    }
    /*footer*/
    footer {      
-      margin: 0px
+      margin: 0px;
    }
    #footer-items {
       width: 100%;
