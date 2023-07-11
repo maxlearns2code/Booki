@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Pages */
-@import 'pages';
+@import 'pages/info.css';
 
 /* Modules */
 @import 'modules/menu.css';
 @import 'modules/find.css';
 @import 'modules/filters.css';
+@import 'modules/footer.css';
 
 /* Design System */
 :root {
@@ -62,23 +63,7 @@ nav a:hover {
 /*main*/
 
 
-/*info*/
-#info {
-   display: flex;
-   align-items: center;
-   margin: 25px 20px 25px 20px;
-}
-#circle-info {
-   height: 50%;
-   padding: 6px 10px 6px 10px;
-   font-size: 12px;
-   background: var(--white);
-   border: 2px solid var(--grey);
-   border-radius: 100%;   
-}
-#info p {
-   margin-left: 10px;    
-}
+
 /*cards*/
 #staysandpopular {
    display: flex;
@@ -236,33 +221,7 @@ nav a:hover {
    height: 50px; 
    justify-content: center;
 }
-/*footer*/
-footer {
-   background-color: var(--light-grey);
-   display: flex;
-   margin: 30px 20px 0px 20px;
-}
-#footer-items {
-   width: 942px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   margin: 45px 21px 58px 70px;
-}
-.footer-items h3 {
-   font-weight: var(--special-font-weight);
-   font-size: var(--middle-font-size);
-}
-.footer-items ul {
-   list-style-type: none;
-   padding: 0;
-}
-.footer-items li {
-   margin: 0;
-   padding-bottom: 12px;
-   font-weight: 400;
-   font-size: var(--normal-font-size); 
-}
+
 @media only screen and (max-width : 992px)
 {
    /*stays in marseile*/
