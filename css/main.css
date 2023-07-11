@@ -7,6 +7,14 @@
    --light-grey: #F2F2F2;
    --black: #000000;
    --white: #FFFFFF;
+
+   /* Text configuration */
+   --special-font-weight: 700;
+   --special-font-family: 'Raleway', sans-serif;
+
+   --body-font-size: 16px;
+   --title-font-size: 22px;
+   --special-title-font-size: 18px;
 }
 
 
