@@ -1,0 +1,27 @@
+/*footer*/
+.footer {
+    background-color: var(--light-grey);
+    display: flex;
+    margin: 30px 20px 0px 20px;
+}
+#footer-items {
+    width: 942px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 45px 21px 58px 70px;
+}
+.footer-items h3 {
+    font-weight: var(--special-font-weight);
+    font-size: var(--middle-font-size);
+}
+.footer-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-items li {
+    margin: 0;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: var(--normal-font-size); 
+}

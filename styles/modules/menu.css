@@ -1,0 +1,30 @@
+/*header*/
+#menu {
+    width: 325px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+ }
+.stays {
+    width: 50%;
+    border-top: 3px solid var(--white);
+    border-bottom: none;
+    padding-top: 44px;
+    padding-bottom: 0px;
+}
+.stays:hover {
+    border-bottom: none;
+    border-top: 3px solid var(--blue);
+}
+.activities {
+    width: 50%;
+    border-top: 3px solid var(--white);
+    border-bottom: none;
+    padding-top: 44px;
+    padding-bottom: 0px;
+}
+.activities:hover {
+    border-bottom: none;
+    border-top: 3px solid var(--blue);
+}

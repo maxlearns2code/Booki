@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Modules */
+@import 'modules/menu.css';
+@import 'modules/find.css';
+@import 'modules/filters.css';
+@import 'modules/footer.css';
+
+/* Design System */
+:root {
+   /* Colors */
+   --blue: #0065FC;
+   --light-blue: #DEEBFF;
+   --grey: #D9D9D9;
+   --light-grey: #F2F2F2;
+   --black: #000000;
+   --white: #FFFFFF;
+
+   /* Text configuration */
+   --special-font-weight: 700;
+   --special-font-family: 'Raleway', sans-serif;
+   
+   --big-font-size: 22px;
+   --middle-font-size: 18px;
+   --normal-font-size: 16px;
+   --small-font-size: 13px;
+}
+
 * {
    box-sizing: border-box;
-   font-family: 'Raleway', sans-serif;
+   font-family: var(--special-font-family);
    font-style: normal;
-   font-size: 16px;
+   font-size: var(--normal-font-size);
 }
 
 body {
@@ -24,133 +52,13 @@ nav {
 nav img {
    width: 61.09px;
    height: 19px;
-   margin: 44px 0px 0px 20px
-}
-#menu {
-   width: 325px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   text-align: center;
-}
-.stays {
-   width: 50%;
-   border-top: 3px solid white;
-   border-bottom: none;
-   padding-top: 44px;
-   padding-bottom: 0px;
-}
-.stays:hover {
-   border-bottom: none;
-   border-top: 3px solid #0065FC;
-}
-.activities {
-   width: 50%;
-   border-top: 3px solid white;
-   border-bottom: none;
-   padding-top: 44px;
-   padding-bottom: 0px;
-}
-.activities:hover {
-   border-bottom: none;
-   border-top: 3px solid #0065FC;
+   margin: 44px 0px 0px 20px;
 }
 nav a:hover {
-   color: #0065FC;
+   color: var(--blue);
 }
 /*main*/
-/*find*/
-#find {
-   display: flex;
-   flex-direction: column;
-   margin: 31px 20px 0px 21px;
-}
-#find h1 {   
-   margin: 0;
-   font-size: 22px;
-}
-#find p {
-   margin: 13px 0px 36px 0px;
-}
-#search-bar {
-   width: 406px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   text-align: center;
-   position: relative;
-   background: #FFFFFF;
-   border: 1px solid #F2F2F2;
-   border-radius: 15px;
-}
-#loc {
-   position: relative;
-   padding: 16px 15px 16px 18px;
-   color:black;
-   background-color: #F2F2F2;
-   border: 1px solid #F2F2F2;
-   border-radius: 15px 0px 0px 15px;
-}
-#marseille {
-   position: absolute;
-   margin: 14px 0px 14px 66px;
-   width: 163px;
-   height: 21px;
-   font-size: 18px;
-   font-weight: 700;
-   border: none; 
-}
-#magn-glass {
-   display: none;
-   position: relative;
-   padding: 15px 16px 15px 16px;
-   width: 50px;
-   font-size: 17px;
-   color:white;
-   background-color: #0065FC;
-   border: 1px solid #0065FC;
-   border-radius: 0px 15px 15px 0px;  
-}
-#search {
-   display: block;
-   position: absolute;
-   width: 132px;
-   margin-left: 303px;
-   padding: 14px 16px 14px 16px;
-   font-size: 18px;
-   font-weight: 700;
-   color:white;
-   background-color: #0065FC;
-   border: 1px solid #0065FC;
-   border-radius: 0px 15px 15px 0px;
-   text-align: center; 
-}
-/*filters*/
-#filter {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin: 34px 20px 0px 20px;
-}
-#filter h2 {
-   font-size: 18px;
-   margin: 7px 13px 7px 0px;
-}
-.icon {
-   font-size: 15px;
-   color: #0065FC;
-}
-.btn {
-   font-weight: 700;
-   background: #FFFFFF;
-   border: 2px solid #D9D9D9;
-   border-radius: 25px;
-   margin: 7px 0px 7px 0px;
-   padding: 13px;
-}
-.btn:hover {
-   box-shadow: 0px 3px 10px 1px #0065FC;
-}
+
 /*info*/
 #info {
    display: flex;
@@ -161,13 +69,14 @@ nav a:hover {
    height: 50%;
    padding: 6px 10px 6px 10px;
    font-size: 12px;
-   background: #FFFFFF;
-   border: 2px solid #D9D9D9;
+   background: var(--white);
+   border: 2px solid var(--grey);
    border-radius: 100%;   
 }
 #info p {
    margin-left: 10px;    
 }
+
 /*cards*/
 #staysandpopular {
    display: flex;
@@ -178,9 +87,9 @@ nav a:hover {
    width: 67%;
    display: flex;
    flex-direction: column;
-   background-color: #F2F2F2;
+   background-color: var(--light-grey);
    border-radius: 20px;
-   margin: 0px 20px 0px 20px 
+   margin: 0px 20px 0px 20px;
 }
 .head {
    display: flex;
@@ -190,8 +99,8 @@ nav a:hover {
    margin: 0px 21px 0px 20px;
 }
 .head h2 {
-   font-size: 22px;
-   font-weight: 700;
+   font-size: var(--big-font-size);
+   font-weight: var(--special-font-weight);
 }
 .choices {
    display: flex;
@@ -205,16 +114,16 @@ nav a:hover {
 .elements-card {
    display: flex;
    flex-direction: column;
-   background-color: #FFFFFF;
+   background-color: var(--white);
    border-radius: 20px;
-   box-shadow: 3px 3px 10px 3px #F2F2F2;
+   box-shadow: 3px 3px 10px 3px var(--light-grey);
    margin-bottom: 12px;
 }
 .card-image img {
    width: 100%;
    height: 114px;
    object-fit: cover;
-   border: 5px solid #FFFFFF;
+   border: 5px solid var(--white);
    border-radius: 20px 20px 0px 0px;
 }
 .card-body {
@@ -224,8 +133,8 @@ nav a:hover {
 }
 .card-body h3 {
    margin: 0px 13px 0px 16px;
-   font-size: 16px;
-   font-weight: 700;
+   font-size: var(--normal-font-size);
+   font-weight: var(--special-font-weight);
 }
 #stays .card-body h3 {
    overflow: hidden;
@@ -243,27 +152,27 @@ nav a:hover {
 .blue-stars {
    width: auto;
    font-size: 15px;
-   color: #0065FC
+   color: var(--blue);
 }
 .grey-stars {
    width: auto;
    font-size: 15px;
-   color: #F2F2F2
+   color: var(--light-grey);
 }
 .more {
    display: block;
 }
 .more p {
    margin: 20px 21px 20px 20px;
-   font-weight: 700;
-   font-size: 18px;
+   font-weight: var(--special-font-weight);
+   font-size: var(--middle-font-size);
 }
 /*most popular*/
 #popular {
    width: 33%;
    display: flex;
    flex-direction: column;
-   background-color: #F2F2F2;
+   background-color: var(--light-grey);
    border-radius: 20px;
    margin: 0px 20px 0px 20px; 
 }
@@ -281,7 +190,7 @@ nav a:hover {
    width: 127px;
    height: 144px;
    object-fit: cover;
-   border: 5px solid #FFFFFF;
+   border: 5px solid var(--white);
    border-radius: 20px 0px 0px 20px;
 }
 #popular .card-body h3 {
@@ -289,7 +198,7 @@ nav a:hover {
 }
 #popular .card-body p {
    font-weight: 400;
-   font-size: 13px;
+   font-size: var(--small-font-size);
 }
 /*most popular*/
 #activities {
@@ -307,8 +216,8 @@ nav a:hover {
    margin-bottom: 24px;
 }
 #activities .head h2 {
-   font-weight: 700;
-   font-size: 22px;
+   font-weight: var(--special-font-weight);
+   font-size: var(--big-font-size);
    margin-bottom: 34px;
    }
 #activities .choices {
@@ -325,33 +234,7 @@ nav a:hover {
    height: 50px; 
    justify-content: center;
 }
-/*footer*/
-footer {
-   background-color: #F2F2F2;
-   display: flex;
-   margin: 30px 20px 0px 20px 
-}
-#footer-items {
-   width: 942px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   margin: 45px 21px 58px 70px;
-}
-.footer-items h3 {
-   font-weight: 700;
-   font-size: 18px;
-}
-.footer-items ul {
-   list-style-type: none;
-   padding: 0;
-}
-.footer-items li {
-   margin: 0;
-   padding-bottom: 12px;
-   font-weight: 400;
-   font-size: 16px   
-}
+
 @media only screen and (max-width : 992px)
 {
    /*stays in marseile*/
@@ -401,18 +284,18 @@ footer {
    }
    .stays {
       padding-bottom: 20px;
-      border-bottom: 3px solid #F2F2F2;
+      border-bottom: 3px solid var(--light-grey);
    }
    .stays:hover {
-      border-bottom: 3px solid #0065FC;
+      border-bottom: 3px solid var(--blue);
       border-top: none;
    }
    .activities {
       padding-bottom: 20px;
-      border-bottom: 3px solid #F2F2F2;
+      border-bottom: 3px solid var(--light-grey);
    }
    .activities:hover {
-      border-bottom: 3px solid #0065FC;
+      border-bottom: 3px solid var(--blue);
       border-top: none;
    }
    /*main*/
@@ -441,7 +324,7 @@ footer {
    }
    /*stays in marseille*/
    #stays {
-      background-color: white;
+      background-color: var(--white);
       border-radius: 0px;
       margin: 0;
    }
@@ -475,7 +358,7 @@ footer {
       width: 127px;
       height: 144px;
       object-fit: cover;
-      border: 5px solid #FFFFFF;
+      border: 5px solid var(--white);
       border-radius: 20px 0px 0px 20px;
    }
    #popular .card-body h3 {
@@ -483,7 +366,7 @@ footer {
    }
    #popular .card-body p {
       font-weight: 400;
-      font-size: 13px;
+      font-size: var(--small-font-size);
    }   
    /*activities*/
    #activities .choices {
@@ -508,7 +391,7 @@ footer {
    }
    /*footer*/
    footer {      
-      margin: 0px
+      margin: 0px;
    }
    #footer-items {
       width: 100%;
