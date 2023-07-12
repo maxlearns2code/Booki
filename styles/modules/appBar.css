@@ -1,4 +1,3 @@
-/*header*/
 .appBar {
     display: flex;
     flex-direction: row;
@@ -21,25 +20,25 @@
     justify-content: space-between;
     text-align: center;
  }
-.appBar__menu--stays {
+.appBar__menu__stays {
     width: 50%;
     border-top: 3px solid var(--white);
     border-bottom: none;
     padding-top: 44px;
     padding-bottom: 0px;
 }
-.appBar__menu--stays:hover {
+.appBar__menu__stays:hover {
     border-bottom: none;
     border-top: 3px solid var(--blue);
 }
-.appBar__menu--activities {
+.appBar__menu__activities {
     width: 50%;
     border-top: 3px solid var(--white);
     border-bottom: none;
     padding-top: 44px;
     padding-bottom: 0px;
 }
-.appBar__menu--activities:hover {
+.appBar__menu__activities:hover {
     border-bottom: none;
     border-top: 3px solid var(--blue);
 }

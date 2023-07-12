@@ -11,25 +11,26 @@
     <body>
         <!--header-->
         <header>
+            <!--appBar-->
             <nav class="appBar">
                 <img src="images/logo/Booki.png" alt="logo" class="appBar__img">
                 <div class="appBar__menu"> 
-                    <div class="appBar__menu--stays"><a href="#stays">Hébergements</a></div>
-                    <div class="appBar__menu--activities"><a href="#activities">Activités</a></div>
+                    <div class="appBar__menu__stays"><a href="#stays">Hébergements</a></div>
+                    <div class="appBar__menu__activities"><a href="#activities">Activités</a></div>
                 </div>
             </nav>
         </header>
         <!--main-->
         <main>
             <!--find-->
-            <div id="find">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form id="search-bar" method="post" action="traitement.php">
-                    <i class="fa-solid fa-location-dot" id="loc"></i>
-                    <input type="search" value="Marseille, France" id="marseille">
-                    <button type="submit" id="magn-glass"><i class="fa-solid fa-magnifying-glass" ></i></button>
-                    <button type="submit" id="search" >Rechercher</button>
+            <div class="find">
+                <h1 class="find__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="find__text">En plein centre-ville ou en pleine nature</p>
+                <form class="find__search-bar" method="post" action="traitement.php">
+                    <i class="find__search-bar__loc fa-solid fa-location-dot"></i>
+                    <input class="find__search-bar__marseille" type="search" value="Marseille, France" >
+                    <button class="find__search-bar__magn-glass" type="submit"><i class="fa-solid fa-magnifying-glass" ></i></button>
+                    <button class="find__search-bar__search" type="submit" >Rechercher</button>
                 </form>
             </div>
             <!--filters-->
