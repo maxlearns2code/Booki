@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/* Pages */
-@import 'pages/info.css';
-
 /* Modules */
 @import 'modules/menu.css';
 @import 'modules/find.css';
@@ -62,7 +59,23 @@ nav a:hover {
 }
 /*main*/
 
-
+/*info*/
+#info {
+   display: flex;
+   align-items: center;
+   margin: 25px 20px 25px 20px;
+}
+#circle-info {
+   height: 50%;
+   padding: 6px 10px 6px 10px;
+   font-size: 12px;
+   background: var(--white);
+   border: 2px solid var(--grey);
+   border-radius: 100%;   
+}
+#info p {
+   margin-left: 10px;    
+}
 
 /*cards*/
 #staysandpopular {
