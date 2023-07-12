@@ -1,45 +1,45 @@
 /*header*/
-nav {
+.appBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 0px;
 }
-nav img {
+.appBar__img {
     width: 61.09px;
     height: 19px;
     margin: 44px 0px 0px 20px;
 }
-nav a:hover {
+.appBar a:hover {
     color: var(--blue);
 }
-#menu {
+.appBar__menu {
     width: 325px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
  }
-.stays {
+.appBar__menu--stays {
     width: 50%;
     border-top: 3px solid var(--white);
     border-bottom: none;
     padding-top: 44px;
     padding-bottom: 0px;
 }
-.stays:hover {
+.appBar__menu--stays:hover {
     border-bottom: none;
     border-top: 3px solid var(--blue);
 }
-.activities {
+.appBar__menu--activities {
     width: 50%;
     border-top: 3px solid var(--white);
     border-bottom: none;
     padding-top: 44px;
     padding-bottom: 0px;
 }
-.activities:hover {
+.appBar__menu--activities:hover {
     border-bottom: none;
     border-top: 3px solid var(--blue);
 }

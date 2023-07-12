@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Modules */
+@import 'modules/appBar.css';
 @import 'modules/cards.css';
 @import 'modules/filters.css';
 @import 'modules/find.css';
 @import 'modules/footer.css';
-@import 'modules/header.css';
 @import 'modules/info.css';
 
 /* Design System */
