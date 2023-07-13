@@ -72,12 +72,12 @@
 }
 .blue-stars {
    width: auto;
-   font-size: 15px;
+   font-size: var(--small-font-size);
    color: var(--blue);
 }
 .grey-stars {
    width: auto;
-   font-size: 15px;
+   font-size: var(--small-font-size);
    color: var(--light-grey);
 }
 .more {
