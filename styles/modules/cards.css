@@ -1,157 +1,157 @@
 /*cards*/
-#staysandpopular {
-    display: flex;
-    flex-direction: row;
- }
- /*stays in marseile*/
- #stays {
-    width: 67%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    border-radius: 20px;
-    margin: 0px 20px 0px 20px;
- }
- .head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 21px 0px 20px;
- }
- .head h2 {
-    font-size: var(--big-font-size);
-    font-weight: var(--special-font-weight);
- }
- .choices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px 21px 0px 20px;
- }
- #stays a {
-    width: 32%;
- }
- .elements-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px 3px var(--light-grey);
-    margin-bottom: 12px;
- }
- .card-image img {
-    width: 100%;
-    height: 114px;
-    object-fit: cover;
-    border: 5px solid var(--white);
-    border-radius: 20px 20px 0px 0px;
- }
- .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
- .card-body h3 {
-    margin: 0px 13px 0px 16px;
-    font-size: var(--normal-font-size);
-    font-weight: var(--special-font-weight);
- }
- #stays .card-body h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
- }
- .card-body p {
-    margin: 9px 13px 9px 16px;
-    font-weight: 400;
-    font-size: 14px;
- }
- .card-stars {
-    margin: 0px 13px 11px 16px;
- }
- .blue-stars {
-    width: auto;
-    font-size: 15px;
-    color: var(--blue);
- }
- .grey-stars {
-    width: auto;
-    font-size: 15px;
-    color: var(--light-grey);
- }
- .more {
-    display: block;
- }
- .more p {
-    margin: 20px 21px 20px 20px;
-    font-weight: var(--special-font-weight);
-    font-size: var(--middle-font-size);
- }
- /*most popular*/
- #popular {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    border-radius: 20px;
-    margin: 0px 20px 0px 20px; 
- }
- #popular .choices {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin-bottom: 20px;
- }
- #popular .elements-card {
-    flex-direction: row;
-    height: 144px;
- }
- #popular .card-image img {
-    width: 127px;
-    height: 144px;
-    object-fit: cover;
-    border: 5px solid var(--white);
-    border-radius: 20px 0px 0px 20px;
- }
- #popular .card-body h3 {
-    margin-top: 14px;
- }
- #popular .card-body p {
-    font-weight: 400;
-    font-size: var(--small-font-size);
- }
- /*most popular*/
- #activities {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
- }
- #activities a {
-    width: 24%;
- }
- #activities .elements-card {
-    width: 100%;
-    height: 445px;
-    margin-bottom: 24px;
- }
- #activities .head h2 {
-    font-weight: var(--special-font-weight);
-    font-size: var(--big-font-size);
-    margin-bottom: 34px;
-    }
- #activities .choices {
-    margin-bottom: 50px;
- }
- #activities .card-image img {
-    width: 100%;
-    height: 389px;
-    object-fit: cover;
-    border: none;
-    border-radius: 20px 20px 0px 0px;
- }
- #activities .card-body {
-    height: 50px; 
-    justify-content: center;
- }
+.staysandpopular {
+   display: flex;
+   flex-direction: row;
+}
+/*stays in marseile*/
+.stays {
+   width: 67%;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--light-grey);
+   border-radius: 20px;
+   margin: 0px 20px 0px 20px;
+}
+.head {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0px 21px 0px 20px;
+}
+.head h2 {
+   font-size: var(--big-font-size);
+   font-weight: var(--special-font-weight);
+}
+.choices {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 21px 0px 20px;
+}
+.stays a {
+   width: 32%;
+}
+.elements-card {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--white);
+   border-radius: 20px;
+   box-shadow: 3px 3px 10px 3px var(--light-grey);
+   margin-bottom: 12px;
+}
+.card-image img {
+   width: 100%;
+   height: 114px;
+   object-fit: cover;
+   border: 5px solid var(--white);
+   border-radius: 20px 20px 0px 0px;
+}
+.card-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card-body h3 {
+   margin: 0px 13px 0px 16px;
+   font-size: var(--normal-font-size);
+   font-weight: var(--special-font-weight);
+}
+.stays .card-body h3 {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.card-body p {
+   margin: 9px 13px 9px 16px;
+   font-weight: 400;
+   font-size: 14px;
+}
+.card-stars {
+   margin: 0px 13px 11px 16px;
+}
+.blue-stars {
+   width: auto;
+   font-size: 15px;
+   color: var(--blue);
+}
+.grey-stars {
+   width: auto;
+   font-size: 15px;
+   color: var(--light-grey);
+}
+.more {
+   display: block;
+}
+.more p {
+   margin: 20px 21px 20px 20px;
+   font-weight: var(--special-font-weight);
+   font-size: var(--middle-font-size);
+}
+/*most popular*/
+.popular {
+   width: 33%;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--light-grey);
+   border-radius: 20px;
+   margin: 0px 20px 0px 20px; 
+}
+.popular .choices {
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+   margin-bottom: 20px;
+}
+.popular .elements-card {
+   flex-direction: row;
+   height: 144px;
+}
+.popular .card-image img {
+   width: 127px;
+   height: 144px;
+   object-fit: cover;
+   border: 5px solid var(--white);
+   border-radius: 20px 0px 0px 20px;
+}
+.popular .card-body h3 {
+   margin-top: 14px;
+}
+.popular .card-body p {
+   font-weight: 400;
+   font-size: var(--small-font-size);
+}
+/*activities*/
+.activities {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+.activities a {
+   width: 24%;
+}
+.activities .elements-card {
+   width: 100%;
+   height: 445px;
+   margin-bottom: 24px;
+}
+.activities .head h2 {
+   font-weight: var(--special-font-weight);
+   font-size: var(--big-font-size);
+   margin-bottom: 34px;
+   }
+.activities .choices {
+   margin-bottom: 50px;
+}
+.activities .card-image img {
+   width: 100%;
+   height: 389px;
+   object-fit: cover;
+   border: none;
+   border-radius: 20px 20px 0px 0px;
+}
+.activities .card-body {
+   height: 50px; 
+   justify-content: center;
+}
