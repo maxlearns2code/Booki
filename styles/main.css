@@ -50,162 +50,163 @@ a {
 @media only screen and (max-width : 992px)
 {
    /*stays in marseile*/
-   #staysandpopular {
+   .staysandpopular {
       flex-direction: column;
    }
-   #stays {
+   .stays {
       width: auto;
    }
    /*most popular*/
-   #popular {
+   .popular {
       width: auto;
       margin: 20px;
    }
-   #popular .choices {
+   .popular .choices {
       flex-direction: row;
       margin-bottom: 20px;
    }
-   #popular .card-image img {
+   .popular .card-image img {
       width: 80px;      
    }
-   #popular .card-body {
+   .popular .card-body {
       width: 146px;
    }   
    /*activities*/
-   #activities .elements-card {
+   .activities .elements-card {
       height: 267px;
    }
-   #activities .card-image img {
+   .activities .card-image img {
       height: 211px;
    }
-   #footer-items {
+   .footer__body {
       width: 646px;
    } 
 }
 @media only screen and (max-width : 767px)
 {
    /*header*/
-   nav {
+   .appBar {
       flex-direction: column;
+      margin: 0;
    }
-   nav img {   
+   .appBar__img {   
       margin-top: 21px;
    }
-   #menu {
+   .appBar__menu {
       width: 100%;      
    }
-   .stays {
+   .appBar__menu__stays {
       padding-bottom: 20px;
       border-bottom: 3px solid var(--light-grey);
    }
-   .stays:hover {
+   .appBar__menu__stays:hover {
       border-bottom: 3px solid var(--blue);
       border-top: none;
    }
-   .activities {
+   .appBar__menu__activities {
       padding-bottom: 20px;
       border-bottom: 3px solid var(--light-grey);
    }
-   .activities:hover {
+   .appBar__menu__activities:hover {
       border-bottom: 3px solid var(--blue);
       border-top: none;
    }
    /*main*/
    /*find*/
-   #search-bar {
+   .find__search-bar {
       width: 100%;
    }
-   #magn-glass {
+   .find__search-bar__magn-glass {
       display: block;
    }
-   #search {
+   .find__search-bar__search {
       display: none;
-   }   
-   #filter {
-      
+   }
+   /*filters*/
+   .filter {
       flex-direction: column;
       align-items: baseline;
    }
-   /*infos*/
-   #info p {
+   /*info*/
+   .info__text {
       margin: 20px 0px 0px 10px;
    }
    /*cards*/
-   #staysandpopular {
+   .staysandpopular {
       flex-direction: column-reverse;
    }
    /*stays in marseille*/
-   #stays {
+   .stays {
       background-color: var(--white);
       border-radius: 0px;
       margin: 0;
    }
-   #stays .choices{
+   .stays .choices{
       flex-direction: column;
    }
-   #stays a {
+   .stays a {
       width: 100%;
    }
-   #stays .card-image img {
+   .stays .card-image img {
       width: 100%;
    }
    .more {
       display: none;
    }
    /*most popular*/
-   #popular {
+   .popular {
       border-radius: 0px;
       margin: 0; 
    }
-   #popular .choices {
+   .popular .choices {
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
    }
-   #popular .elements-card {
+   .popular .elements-card {
       flex-direction: row;
       height: 144px;
    }
-   #popular .card-image img {
+   .popular .card-image img {
       width: 127px;
       height: 144px;
       object-fit: cover;
       border: 5px solid var(--white);
       border-radius: 20px 0px 0px 20px;
    }
-   #popular .card-body h3 {
+   .popular .card-body h3 {
       margin-top: 14px;
    }
-   #popular .card-body p {
+   .popular .card-body p {
       font-weight: 400;
       font-size: var(--small-font-size);
    }   
    /*activities*/
-   #activities .choices {
+   .activities .choices {
       flex-direction: column;
       margin-top: 0px;
       margin-bottom: 0px;
    }
-   #activities a {
+   .activities a {
       width: 100%;
    }
-   #activities .head h2 {
+   .activities .head h2 {
       width: 200px;
       height: 60px;
       margin: 0;
    }
-   #activities .elements-card {
+   .activities .elements-card {
       height: 190px;
       margin-bottom: 24px;
    }
-   #activities .card-image img {
+   .activities .card-image img {
       height: 134px;
    }
    /*footer*/
-   footer {      
+   .footer {      
       margin: 0px;
    }
-   #footer-items {
+   .footer__body {
       width: 100%;
       flex-direction: column;
       margin-left: 30px;
