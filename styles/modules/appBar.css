@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
+    margin: var(--margin-standard);
 }
 .appBar__img {
     width: 61.09px;
     height: 19px;
-    margin: 44px 0px 0px 20px;
+    margin-top: 44px;
 }
 .appBar a:hover {
     color: var(--blue);

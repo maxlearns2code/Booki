@@ -26,6 +26,9 @@
    --middle-font-size: 18px;
    --normal-font-size: 16px;
    --small-font-size: 13px;
+
+   /* spacing */
+   --margin-standard: 0px 20px 0px 20px;
 }
 
 * {

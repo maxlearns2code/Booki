@@ -2,6 +2,7 @@
 .staysandpopular {
    display: flex;
    flex-direction: row;
+   margin-top: 25px;
 }
 /*stays in marseile*/
 .stays {
@@ -10,7 +11,7 @@
    flex-direction: column;
    background-color: var(--light-grey);
    border-radius: 20px;
-   margin: 0px 20px 0px 20px;
+   margin: var(--margin-standard);
 }
 .head {
    display: flex;
@@ -95,7 +96,7 @@
    flex-direction: column;
    background-color: var(--light-grey);
    border-radius: 20px;
-   margin: 0px 20px 0px 20px; 
+   margin: var(--margin-standard);
 }
 .popular .choices {
    flex-direction: column;

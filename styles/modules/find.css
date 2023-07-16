@@ -1,7 +1,8 @@
 .find {
     display: flex;
     flex-direction: column;
-    margin: 31px 20px 0px 21px;
+    margin: var(--margin-standard);
+    margin-top: 31px;
 }
 .find__title {   
     margin: 0;
