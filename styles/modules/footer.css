@@ -1,25 +1,25 @@
-/*footer*/
 .footer {
     background-color: var(--light-grey);
     display: flex;
-    margin: 30px 20px 0px 20px;
+    margin: var(--margin-standard);
+    margin-top: 30px;
 }
-#footer-items {
+.footer__body {
     width: 942px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 45px 21px 58px 70px;
 }
-.footer-items h3 {
+.footer__body__items__title {
     font-weight: var(--special-font-weight);
     font-size: var(--middle-font-size);
 }
-.footer-items ul {
+.footer__body__items__list {
     list-style-type: none;
     padding: 0;
 }
-.footer-items li {
+.footer__body__items__list__select {
     margin: 0;
     padding-bottom: 12px;
     font-weight: 400;

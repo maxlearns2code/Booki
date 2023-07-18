@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Modules */
-@import 'modules/menu.css';
-@import 'modules/find.css';
+@import 'modules/appBar.css';
+@import 'modules/cards.css';
 @import 'modules/filters.css';
+@import 'modules/find.css';
 @import 'modules/footer.css';
+@import 'modules/info.css';
 
 /* Design System */
 :root {
@@ -24,6 +26,9 @@
    --middle-font-size: 18px;
    --normal-font-size: 16px;
    --small-font-size: 13px;
+
+   /* spacing */
+   --margin-standard: 0px 20px 0px 20px;
 }
 
 * {
@@ -41,359 +46,167 @@ a {
    text-decoration: none;
    color: black;
 }
-/*header*/
-nav {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 0px;
-}
-nav img {
-   width: 61.09px;
-   height: 19px;
-   margin: 44px 0px 0px 20px;
-}
-nav a:hover {
-   color: var(--blue);
-}
-/*main*/
-
-/*info*/
-#info {
-   display: flex;
-   align-items: center;
-   margin: 25px 20px 25px 20px;
-}
-#circle-info {
-   height: 50%;
-   padding: 6px 10px 6px 10px;
-   font-size: 12px;
-   background: var(--white);
-   border: 2px solid var(--grey);
-   border-radius: 100%;   
-}
-#info p {
-   margin-left: 10px;    
-}
-
-/*cards*/
-#staysandpopular {
-   display: flex;
-   flex-direction: row;
-}
-/*stays in marseile*/
-#stays {
-   width: 67%;
-   display: flex;
-   flex-direction: column;
-   background-color: var(--light-grey);
-   border-radius: 20px;
-   margin: 0px 20px 0px 20px;
-}
-.head {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0px 21px 0px 20px;
-}
-.head h2 {
-   font-size: var(--big-font-size);
-   font-weight: var(--special-font-weight);
-}
-.choices {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin: 0px 21px 0px 20px;
-}
-#stays a {
-   width: 32%;
-}
-.elements-card {
-   display: flex;
-   flex-direction: column;
-   background-color: var(--white);
-   border-radius: 20px;
-   box-shadow: 3px 3px 10px 3px var(--light-grey);
-   margin-bottom: 12px;
-}
-.card-image img {
-   width: 100%;
-   height: 114px;
-   object-fit: cover;
-   border: 5px solid var(--white);
-   border-radius: 20px 20px 0px 0px;
-}
-.card-body {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-}
-.card-body h3 {
-   margin: 0px 13px 0px 16px;
-   font-size: var(--normal-font-size);
-   font-weight: var(--special-font-weight);
-}
-#stays .card-body h3 {
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-}
-.card-body p {
-   margin: 9px 13px 9px 16px;
-   font-weight: 400;
-   font-size: 14px;
-}
-.card-stars {
-   margin: 0px 13px 11px 16px;
-}
-.blue-stars {
-   width: auto;
-   font-size: 15px;
-   color: var(--blue);
-}
-.grey-stars {
-   width: auto;
-   font-size: 15px;
-   color: var(--light-grey);
-}
-.more {
-   display: block;
-}
-.more p {
-   margin: 20px 21px 20px 20px;
-   font-weight: var(--special-font-weight);
-   font-size: var(--middle-font-size);
-}
-/*most popular*/
-#popular {
-   width: 33%;
-   display: flex;
-   flex-direction: column;
-   background-color: var(--light-grey);
-   border-radius: 20px;
-   margin: 0px 20px 0px 20px; 
-}
-#popular .choices {
-   flex-direction: column;
-   justify-content: space-between;
-   height: 100%;
-   margin-bottom: 20px;
-}
-#popular .elements-card {
-   flex-direction: row;
-   height: 144px;
-}
-#popular .card-image img {
-   width: 127px;
-   height: 144px;
-   object-fit: cover;
-   border: 5px solid var(--white);
-   border-radius: 20px 0px 0px 20px;
-}
-#popular .card-body h3 {
-   margin-top: 14px;
-}
-#popular .card-body p {
-   font-weight: 400;
-   font-size: var(--small-font-size);
-}
-/*most popular*/
-#activities {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin-top: 50px;
-}
-#activities a {
-   width: 24%;
-}
-#activities .elements-card {
-   width: 100%;
-   height: 445px;
-   margin-bottom: 24px;
-}
-#activities .head h2 {
-   font-weight: var(--special-font-weight);
-   font-size: var(--big-font-size);
-   margin-bottom: 34px;
-   }
-#activities .choices {
-   margin-bottom: 50px;
-}
-#activities .card-image img {
-   width: 100%;
-   height: 389px;
-   object-fit: cover;
-   border: none;
-   border-radius: 20px 20px 0px 0px;
-}
-#activities .card-body {
-   height: 50px; 
-   justify-content: center;
-}
 
 @media only screen and (max-width : 992px)
 {
    /*stays in marseile*/
-   #staysandpopular {
+   .staysandpopular {
       flex-direction: column;
    }
-   #stays {
+   .stays {
       width: auto;
    }
    /*most popular*/
-   #popular {
+   .popular {
       width: auto;
       margin: 20px;
    }
-   #popular .choices {
+   .popular .choices {
       flex-direction: row;
       margin-bottom: 20px;
    }
-   #popular .card-image img {
+   .popular .card-image img {
       width: 80px;      
    }
-   #popular .card-body {
+   .popular .card-body {
       width: 146px;
    }   
    /*activities*/
-   #activities .elements-card {
+   .activities .elements-card {
       height: 267px;
    }
-   #activities .card-image img {
+   .activities .card-image img {
       height: 211px;
    }
-   #footer-items {
+   .footer__body {
       width: 646px;
    } 
 }
 @media only screen and (max-width : 767px)
 {
    /*header*/
-   nav {
+   .appBar {
       flex-direction: column;
+      margin: 0;
    }
-   nav img {   
+   .appBar__img {   
       margin-top: 21px;
    }
-   #menu {
+   .appBar__menu {
       width: 100%;      
    }
-   .stays {
+   .appBar__menu__stays {
       padding-bottom: 20px;
       border-bottom: 3px solid var(--light-grey);
    }
-   .stays:hover {
+   .appBar__menu__stays:hover {
       border-bottom: 3px solid var(--blue);
       border-top: none;
    }
-   .activities {
+   .appBar__menu__activities {
       padding-bottom: 20px;
       border-bottom: 3px solid var(--light-grey);
    }
-   .activities:hover {
+   .appBar__menu__activities:hover {
       border-bottom: 3px solid var(--blue);
       border-top: none;
    }
    /*main*/
    /*find*/
-   #search-bar {
+   .find__search-bar {
       width: 100%;
    }
-   #magn-glass {
+   .find__search-bar__magn-glass {
       display: block;
    }
-   #search {
+   .find__search-bar__search {
       display: none;
-   }   
-   #filter {
-      
+   }
+   /*filters*/
+   .filter {
       flex-direction: column;
       align-items: baseline;
    }
-   /*infos*/
-   #info p {
+   /*info*/
+   .info__text {
       margin: 20px 0px 0px 10px;
    }
    /*cards*/
-   #staysandpopular {
+   .staysandpopular {
       flex-direction: column-reverse;
    }
    /*stays in marseille*/
-   #stays {
+   .stays {
       background-color: var(--white);
       border-radius: 0px;
       margin: 0;
    }
-   #stays .choices{
+   .stays .choices{
       flex-direction: column;
    }
-   #stays a {
+   .stays a {
       width: 100%;
    }
-   #stays .card-image img {
+   .stays .card-image img {
       width: 100%;
    }
    .more {
       display: none;
    }
    /*most popular*/
-   #popular {
+   .popular {
       border-radius: 0px;
       margin: 0; 
    }
-   #popular .choices {
+   .popular .choices {
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
    }
-   #popular .elements-card {
+   .popular .elements-card {
       flex-direction: row;
       height: 144px;
    }
-   #popular .card-image img {
+   .popular .card-image img {
       width: 127px;
       height: 144px;
       object-fit: cover;
       border: 5px solid var(--white);
       border-radius: 20px 0px 0px 20px;
    }
-   #popular .card-body h3 {
+   .popular .card-body h3 {
       margin-top: 14px;
    }
-   #popular .card-body p {
+   .popular .card-body p {
       font-weight: 400;
       font-size: var(--small-font-size);
    }   
    /*activities*/
-   #activities .choices {
+   .activities .choices {
       flex-direction: column;
       margin-top: 0px;
       margin-bottom: 0px;
    }
-   #activities a {
+   .activities a {
       width: 100%;
    }
-   #activities .head h2 {
+   .activities .head h2 {
       width: 200px;
       height: 60px;
       margin: 0;
    }
-   #activities .elements-card {
+   .activities .elements-card {
       height: 190px;
       margin-bottom: 24px;
    }
-   #activities .card-image img {
+   .activities .card-image img {
       height: 134px;
    }
    /*footer*/
-   footer {      
+   .footer {      
       margin: 0px;
    }
-   #footer-items {
+   .footer__body {
       width: 100%;
       flex-direction: column;
       margin-left: 30px;

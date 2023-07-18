@@ -1,17 +1,17 @@
-/*find*/
-#find {
+.find {
     display: flex;
     flex-direction: column;
-    margin: 31px 20px 0px 21px;
+    margin: var(--margin-standard);
+    margin-top: 31px;
 }
-#find h1 {   
+.find__title {   
     margin: 0;
     font-size: var(--big-font-size);
 }
-#find p {
+.find__text {
     margin: 13px 0px 36px 0px;
 }
-#search-bar {
+.find__search-bar {
     width: 406px;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@
     border: 1px solid var(--light-grey);
     border-radius: 15px;
 }
-#loc {
+.find__search-bar__loc {
     position: relative;
     padding: 16px 15px 16px 18px;
     color:var(--black);
@@ -30,27 +30,26 @@
     border: 1px solid var(--light-grey);
     border-radius: 15px 0px 0px 15px;
 }
-#marseille {
+.find__search-bar__marseille {
     position: absolute;
     margin: 14px 0px 14px 66px;
-    width: 163px;
+    width: 166px;
     height: 21px;
     font-size: var(--middle-font-size);
     font-weight: var(--special-font-weight);
     border: none; 
 }
-#magn-glass {
+.find__search-bar__magn-glass {
     display: none;
     position: relative;
     padding: 15px 16px 15px 16px;
     width: 50px;
-    font-size: 17px;
     color:var(--white);
     background-color: var(--blue);
     border: 1px solid var(--blue);
     border-radius: 0px 15px 15px 0px;  
 }
-#search {
+.find__search-bar__search {
     display: block;
     position: absolute;
     width: 132px;

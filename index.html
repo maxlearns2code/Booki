@@ -11,46 +11,48 @@
     <body>
         <!--header-->
         <header>
-            <nav>
-                <img src="images/logo/Booki.png" alt="logo">
-                <div id="menu"> 
-                    <div class="stays"><a href="#stays">Hébergements</a></div>
-                    <div class="activities"><a href="#activities">Activités</a></div>
+            <!--appBar-->
+            <nav class="appBar">
+                <img class="appBar__img" src="images/logo/Booki.png" alt="logo" loading="lazy">
+                <div class="appBar__menu"> 
+                    <div class="appBar__menu__stays"><a href="#stays">Hébergements</a></div>
+                    <div class="appBar__menu__activities"><a href="#activities">Activités</a></div>
                 </div>
             </nav>
         </header>
         <!--main-->
         <main>
             <!--find-->
-            <div id="find">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form id="search-bar" method="post" action="traitement.php">
-                    <i class="fa-solid fa-location-dot" id="loc"></i>
-                    <input type="search" value="Marseille, France" id="marseille">
-                    <button type="submit" id="magn-glass"><i class="fa-solid fa-magnifying-glass" ></i></button>
-                    <button type="submit" id="search" >Rechercher</button>
+            <div class="find">
+                <h1 class="find__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="find__text">En plein centre-ville ou en pleine nature</p>
+                <form class="find__search-bar" method="post" action="traitement.php">
+                    <i class="find__search-bar__loc fa-solid fa-location-dot"></i>
+                    <label for="search">""</label>
+                    <input class="find__search-bar__marseille" id="search" type="search" value="Marseille, France" >
+                    <button class="find__search-bar__magn-glass" type="submit"><i class="fa-solid fa-magnifying-glass" >""</i></button>
+                    <button class="find__search-bar__search" type="submit" >Rechercher</button>
                 </form>
             </div>
             <!--filters-->
-            <div id="filter">
-                <h2>Filtres</h2>
-                <div>
-                    <button class="btn" onclick="filterSelection('Economique')"> <i class="fa-solid fa-money-bill-wave icon"></i> Economique</button>
-                    <button class="btn" onclick="filterSelection('Familial')"> <i class="fa-sharp fa-solid fa-child-reaching icon"></i> Familial</button>        
-                    <button class="btn" onclick="filterSelection('Romantique')"> <i class="fa-solid fa-heart icon"></i> Romantique</button>
-                    <button class="btn" onclick="filterSelection('Animaux autorisés')"> <i class="fa-solid fa-dog icon"></i> Animaux autorisés</button>
+            <div class="filter">
+                <h2 class="filter__title">Filtres</h2>
+                <div class="filter__btn">
+                    <button class="filter__btn--style" onclick="filterSelection('Economique')"> <i class="fa-solid fa-money-bill-wave icon"></i> Economique</button>
+                    <button class="filter__btn--style" onclick="filterSelection('Familial')"> <i class="fa-sharp fa-solid fa-child-reaching icon"></i> Familial</button>        
+                    <button class="filter__btn--style" onclick="filterSelection('Romantique')"> <i class="fa-solid fa-heart icon"></i> Romantique</button>
+                    <button class="filter__btn--style" onclick="filterSelection('Animaux autorisés')"> <i class="fa-solid fa-dog icon"></i> Animaux autorisés</button>
                 </div>
             </div>
-            <!--infos-->
-            <div id=info>
-                <i class="fa-solid fa-info icon" id="circle-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <!--info-->
+            <div class=info>
+                <i class="info__item fa-solid fa-info icon"></i>
+                <p class="info__text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             <!--cards-->
-            <div id="staysandpopular">
+            <div class="staysandpopular">
                 <!--stays in marseille-->
-                <section id="stays">
+                <section class="stays">
                     <div class="head">
                         <h2>Hébergements à Marseille</h2>
                    </div>
@@ -58,7 +60,7 @@
                         <a href="#">
                             <article class="elements-card">                    
                                 <div class="card-image">
-                                    <img src="images/hebergements/canebiere.jpg" alt="Auberge de la Canebière">
+                                    <img src="images/hebergements/canebiere.webp" alt="Auberge de la Canebière" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -78,7 +80,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/port.jpg" alt="Hôtel du port">
+                                    <img src="images/hebergements/port.webp" alt="Hôtel du port" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -98,7 +100,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/mouettes.jpg" alt="Hôtel Les mouettes">
+                                    <img src="images/hebergements/mouettes.webp" alt="Hôtel Les mouettes" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -118,7 +120,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/mer.jpg" alt="Hôtel de la mer">
+                                    <img src="images/hebergements/mer.webp" alt="Hôtel de la mer" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -138,7 +140,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/panier.jpg" alt="Auberge Le Panier">
+                                    <img src="images/hebergements/panier.webp" alt="Auberge Le Panier" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -158,7 +160,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/amina.jpg" alt="Hôtel Chez Amina">
+                                    <img src="images/hebergements/amina.webp" alt="Hôtel Chez Amina" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -181,7 +183,7 @@
                     </div>
                 </section>
                 <!--most popular-->
-                <section id="popular">
+                <section class="popular">
                     <div class="head">
                         <h2>Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line icon"></i>
@@ -190,7 +192,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/soleil.jpg" alt="Hôtel Le soleil du matin">
+                                    <img src="images/hebergements/soleil.webp" alt="Hôtel Le soleil du matin" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -210,7 +212,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/coeur.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
+                                    <img src="images/hebergements/coeur.webp" alt="Chambres d'hôtes Au coeur de l'eau" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -230,7 +232,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/bleu.jpg" alt="Hôtel Bleu et Blanc">
+                                    <img src="images/hebergements/bleu.webp" alt="Hôtel Bleu et Blanc" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
@@ -251,7 +253,7 @@
                 </section>
             </div>
                 <!--activities-->
-                <section id="activities">
+                <section class="activities">
                     <div class="head">
                         <h2>Activités à Marseille</h2>
                     </div>
@@ -259,7 +261,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/activites/port.jpg" alt="Vieux-Port">
+                                    <img src="images/activites/port.webp" alt="Vieux-Port" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <h3>Vieux-Port</h3>           
@@ -269,7 +271,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/activites/pomegues.jpg" alt="Pomègues">
+                                    <img src="images/activites/pomegues.webp" alt="Pomègues" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <h3>Fort de Pomègues</h3>
@@ -279,7 +281,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/activites/calanques.jpg" alt="Parc national des Calanques">
+                                    <img src="images/activites/calanques.webp" alt="Parc national des Calanques" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <h3>Parc national des Calanques</h3>
@@ -289,7 +291,7 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/activites/dame.jpg" alt="Notre-Dame-de-la-Garde">
+                                    <img src="images/activites/dame.webp" alt="Notre-Dame-de-la-Garde" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <h3>Notre-Dame-de-la-Garde</h3>
@@ -301,27 +303,27 @@
         </main>
         <!--footer--> 
         <footer class="footer">
-            <div id="footer-items">
-                <div class="footer-items">
-                    <h3>A propos</h3>
-                    <ul>
-                        <li><a href="#"> Fonctionnement du site</a></li>
-                        <li><a href="#"> Conditions générales</a></li>
-                        <li><a href="#"> Données et confidentialité</a></li>
+            <div class="footer__body">
+                <div class="footer__body__items">
+                    <h3 class="footer__body__items__title">A propos</h3>
+                    <ul class="footer__body__items__list">
+                        <li class="footer__body__items__list__select"><a href="#"> Fonctionnement du site</a></li>
+                        <li class="footer__body__items__list__select"><a href="#"> Conditions générales</a></li>
+                        <li class="footer__body__items__list__select"><a href="#"> Données et confidentialité</a></li>
                     </ul>
                 </div>
-                <div class="footer-items">
-                    <h3>Nos Hébergements</h3>
-                    <ul>
-                        <li><a href="#"> Charte qualité</a></li>
-                        <li><a href="#"> Proposer votre hôtel</a></li>
+                <div class="footer__body__items">
+                    <h3 class="footer__body__items__title">Nos Hébergements</h3>
+                    <ul class="footer__body__items__list">
+                        <li class="footer__body__items__list__select"><a href="#"> Charte qualité</a></li>
+                        <li class="footer__body__items__list__select"><a href="#"> Proposer votre hôtel</a></li>
                     </ul>
                 </div>
-                <div class="footer-items">
-                    <h3>Assistance</h3>
-                    <ul>
-                        <li><a href="#"> Centre d'aide</a></li>
-                        <li><a href="#"> Nous contacter</a></li>
+                <div class="footer__body__items">
+                    <h3 class="footer__body__items__title">Assistance</h3>
+                    <ul class="footer__body__items__list">
+                        <li class="footer__body__items__list__select"><a href="#"> Centre d'aide</a></li>
+                        <li class="footer__body__items__list__select"><a href="#"> Nous contacter</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,17 @@
+.info {
+    display: flex;
+    align-items: center;
+    margin: var(--margin-standard);
+    margin-top: 25px;
+}
+.info__item {
+    height: 50%;
+    padding: 6px 10px 6px 10px;
+    font-size: var(--small-font-size);
+    background: var(--white);
+    border: 2px solid var(--grey);
+    border-radius: 100%;   
+}
+.info__text {
+    margin-left: 10px;    
+}
