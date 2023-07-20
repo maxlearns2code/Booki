@@ -26,23 +26,23 @@
 @media only screen and (max-width : 992px)
 {
    .filter {
-      flex-direction: column;
-      align-items: baseline;
+        flex-direction: column;
+        align-items: baseline;
    }
    .filter__title {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width : 767px)
 {
    .filter {
-      margin: var(--margin-border-mobile);
+        margin: var(--margin-border-mobile);
    }
    .filter__btn {
-      height: 140px;
+        height: 140px;
    }
    .filter__btn--style {
-      margin-top: 20px;
-      width: 162px;
+        margin-top: 20px;
+        width: 162px;
    }
 }
