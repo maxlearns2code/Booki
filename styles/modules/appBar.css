@@ -42,3 +42,34 @@
     border-bottom: none;
     border-top: 3px solid var(--blue);
 }
+@media only screen and (max-width : 767px)
+{
+   .appBar {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      height: 115px;
+   }
+   .appBar__logo { 
+      margin-top: 21px;
+   }
+   .appBar__menu {
+      width: 100%;      
+   }
+   .appBar__menu__stays {
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--light-grey);
+   }
+   .appBar__menu__stays:hover {
+      border-bottom: 3px solid var(--blue);
+      border-top: none;
+   }
+   .appBar__menu__activities {
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--light-grey);
+   }
+   .appBar__menu__activities:hover {
+      border-bottom: 3px solid var(--blue);
+      border-top: none;
+   }
+}

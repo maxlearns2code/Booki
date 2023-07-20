@@ -25,3 +25,19 @@
     font-weight: 400;
     font-size: var(--normal-font-size); 
 }
+@media only screen and (max-width : 767px)
+{
+   .footer {      
+      margin: 0px;
+   }
+   .footer__body {
+      width: 100%;
+      flex-direction: column;
+      margin-left: 30px;
+      padding: 0;
+   }
+   .footer__body__items {
+      width: 100%;
+      margin: 20px 0 25px 0;
+  }
+}

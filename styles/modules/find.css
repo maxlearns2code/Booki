@@ -63,3 +63,19 @@
     border-radius: 0px 15px 15px 0px;
     text-align: center; 
 }
+@media only screen and (max-width : 767px)
+{
+   .find {
+      margin: var(--margin-border-mobile);
+      margin-top: 30px;
+   }
+   .find__search-bar {
+      width: 100%;
+   }
+   .find__search-bar__magn-glass {
+      display: block;
+   }
+   .find__search-bar__search {
+      display: none;
+   }
+}
