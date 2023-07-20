@@ -28,7 +28,10 @@
    --small-font-size: 13px;
 
    /* spacing */
-   --margin-standard: 0px 20px 0px 20px;
+   --margin-border: 0px 50px 35px 50px;
+   --margin-right-left: 0px 20px 0px 20px;
+   --margin-card: 30px;
+   --margin-up-down: 30px 0px 30px 0px;
 }
 
 * {
@@ -91,7 +94,7 @@ a {
       flex-direction: column;
       margin: 0;
    }
-   .appBar__img {   
+   .appBar__logo {   
       margin-top: 21px;
    }
    .appBar__menu {

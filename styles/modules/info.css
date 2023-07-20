@@ -1,8 +1,7 @@
 .info {
     display: flex;
     align-items: center;
-    margin: var(--margin-standard);
-    margin-top: 25px;
+    margin: var(--margin-border);
 }
 .info__item {
     height: 50%;
