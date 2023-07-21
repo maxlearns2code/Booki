@@ -64,7 +64,7 @@
     text-align: center; 
 }
 .sr-only{
-    visibility: none;
+    display: none;
 }
 @media only screen and (max-width : 767px)
 {
