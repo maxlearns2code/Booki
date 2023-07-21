@@ -38,6 +38,9 @@
    .filter {
         margin: var(--margin-border-mobile);
    }
+   .filter__title {
+    margin-bottom: 0;
+}
    .filter__btn {
         height: 140px;
    }

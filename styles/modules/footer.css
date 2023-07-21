@@ -29,6 +29,7 @@
 {
    .footer {      
         margin: 0px;
+        margin-top: 35px;
    }
    .footer__body {
         width: 100%;
