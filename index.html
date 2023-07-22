@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">          
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/main.css">
         <title>Booki</title>      
     </head>
@@ -13,7 +12,7 @@
         <header>
             <!--appBar-->
             <nav class="appBar">
-                <img class="appBar__img" src="images/logo/Booki.png" alt="logo" loading="lazy">
+                <img class="appBar__logo" src="images/logo/Booki.png" alt="logo" loading="lazy">
                 <div class="appBar__menu"> 
                     <div class="appBar__menu__stays"><a href="#stays">Hébergements</a></div>
                     <div class="appBar__menu__activities"><a href="#activities">Activités</a></div>
@@ -28,9 +27,9 @@
                 <p class="find__text">En plein centre-ville ou en pleine nature</p>
                 <form class="find__search-bar" method="post" action="traitement.php">
                     <i class="find__search-bar__loc fa-solid fa-location-dot"></i>
-                    <label for="search">""</label>
-                    <input class="find__search-bar__marseille" id="search" type="search" value="Marseille, France" >
-                    <button class="find__search-bar__magn-glass" type="submit"><i class="fa-solid fa-magnifying-glass" >""</i></button>
+                    <label class="sr-only" for="location-search">choix destination</label>
+                    <input class="find__search-bar__marseille" type="search" id="location-search" value="Marseille, France" >
+                    <button class="find__search-bar__magn-glass" type="submit"><i class="fa-solid fa-magnifying-glass" ></i></button>
                     <button class="find__search-bar__search" type="submit" >Rechercher</button>
                 </form>
             </div>
@@ -39,9 +38,9 @@
                 <h2 class="filter__title">Filtres</h2>
                 <div class="filter__btn">
                     <button class="filter__btn--style" onclick="filterSelection('Economique')"> <i class="fa-solid fa-money-bill-wave icon"></i> Economique</button>
-                    <button class="filter__btn--style" onclick="filterSelection('Familial')"> <i class="fa-sharp fa-solid fa-child-reaching icon"></i> Familial</button>        
+                    <button class="filter__btn--style" onclick="filterSelection('Familial')"> <i class="fa-solid fa-person icon"></i> Familial</button>        
                     <button class="filter__btn--style" onclick="filterSelection('Romantique')"> <i class="fa-solid fa-heart icon"></i> Romantique</button>
-                    <button class="filter__btn--style" onclick="filterSelection('Animaux autorisés')"> <i class="fa-solid fa-dog icon"></i> Animaux autorisés</button>
+                    <button class="filter__btn--style" onclick="filterSelection('Nos pépites')"> <i class="fa-solid fa-fire icon"></i> Nos pépites</button>
                 </div>
             </div>
             <!--info-->
@@ -58,14 +57,14 @@
                    </div>
                     <div class="choices">
                         <a href="#">
-                            <article class="elements-card">                    
+                            <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/canebiere.webp" alt="Auberge de la Canebière" loading="lazy" width="700" height="300">
+                                    <img src="images/hebergements/port.webp" alt="Hôtel du port" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <h3>Auberge de la Canebière</h3>
-                                        <p>Nuit à partir de 25€</p>
+                                        <h3>Hôtel du port</h3>
+                                        <p>Nuit à partir de 52€</p>
                                     </div>
                                     <div class="card-stars"> 
                                         <i class="fa-solid fa-star blue-stars"></i>
@@ -80,12 +79,12 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/port.webp" alt="Hôtel du port" loading="lazy" width="700" height="300">
+                                    <img src="images/hebergements/amina.webp" alt="Hôtel Chez Amina" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <h3>Hôtel du port</h3>
-                                        <p>Nuit à partir de 52€</p>
+                                        <h3>Hôtel Chez Amina</h3>
+                                        <p>Nuit à partir de 96€</p>
                                     </div>
                                     <div class="card-stars"> 
                                         <i class="fa-solid fa-star blue-stars"></i>
@@ -138,14 +137,14 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class="elements-card">
+                            <article class="elements-card">                    
                                 <div class="card-image">
-                                    <img src="images/hebergements/panier.webp" alt="Auberge Le Panier" loading="lazy" width="700" height="300">
+                                    <img src="images/hebergements/canebiere.webp" alt="Auberge de la Canebière" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <h3>Auberge Le Panier</h3>
-                                        <p>Nuit à partir de 23€</p>
+                                        <h3>Auberge de la Canebière</h3>
+                                        <p>Nuit à partir de 25€</p>
                                     </div>
                                     <div class="card-stars"> 
                                         <i class="fa-solid fa-star blue-stars"></i>
@@ -160,12 +159,12 @@
                         <a href="#">
                             <article class="elements-card">
                                 <div class="card-image">
-                                    <img src="images/hebergements/amina.webp" alt="Hôtel Chez Amina" loading="lazy" width="700" height="300">
+                                    <img src="images/hebergements/panier.webp" alt="Auberge Le Panier" loading="lazy" width="700" height="300">
                                 </div>
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <h3>Hôtel Chez Amina</h3>
-                                        <p>Nuit à partir de 96€</p>
+                                        <h3>Auberge Le Panier</h3>
+                                        <p>Nuit à partir de 23€</p>
                                     </div>
                                     <div class="card-stars"> 
                                         <i class="fa-solid fa-star blue-stars"></i>

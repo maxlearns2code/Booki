@@ -1,7 +1,7 @@
 .find {
     display: flex;
     flex-direction: column;
-    margin: var(--margin-standard);
+    margin: var(--margin-border);
     margin-top: 31px;
 }
 .find__title {   
@@ -9,7 +9,7 @@
     font-size: var(--big-font-size);
 }
 .find__text {
-    margin: 13px 0px 36px 0px;
+    margin: 8px 0px 35px 0px;
 }
 .find__search-bar {
     width: 406px;
@@ -62,4 +62,23 @@
     border: 1px solid var(--blue);
     border-radius: 0px 15px 15px 0px;
     text-align: center; 
+}
+.sr-only{
+    display: none;
+}
+@media only screen and (max-width : 767px)
+{
+   .find {
+        margin: var(--margin-border-mobile);
+        margin-top: 30px;
+   }
+   .find__search-bar {
+        width: 100%;
+   }
+   .find__search-bar__magn-glass {
+        display: block;
+   }
+   .find__search-bar__search {
+        display: none;
+   }
 }

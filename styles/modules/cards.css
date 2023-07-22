@@ -2,23 +2,23 @@
 .staysandpopular {
    display: flex;
    flex-direction: row;
-   margin-top: 25px;
+   justify-content: space-between;
+   margin: var(--margin-border);
 }
 /*stays in marseile*/
 .stays {
-   width: 67%;
+   width: 66%;
    display: flex;
    flex-direction: column;
    background-color: var(--light-grey);
    border-radius: 20px;
-   margin: var(--margin-standard);
 }
 .head {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   margin: 0px 21px 0px 20px;
+   margin: var(--margin-card);
 }
 .head h2 {
    font-size: var(--big-font-size);
@@ -28,7 +28,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   margin: 0px 21px 0px 20px;
+   margin: 0px 30px 0px 30px;
 }
 .stays a {
    width: 32%;
@@ -39,7 +39,7 @@
    background-color: var(--white);
    border-radius: 20px;
    box-shadow: 3px 3px 10px 3px var(--light-grey);
-   margin-bottom: 12px;
+   margin-bottom: 15px;
 }
 .card-image img {
    width: 100%;
@@ -54,7 +54,7 @@
    justify-content: space-between;
 }
 .card-body h3 {
-   margin: 0px 13px 0px 16px;
+   margin-left: 15px;
    font-size: var(--normal-font-size);
    font-weight: var(--special-font-weight);
 }
@@ -64,7 +64,8 @@
    text-overflow: ellipsis;
 }
 .card-body p {
-   margin: 9px 13px 9px 16px;
+   margin-left: 15px;
+   margin-top: 5px;
    font-weight: 400;
    font-size: 14px;
 }
@@ -83,9 +84,9 @@
 }
 .more {
    display: block;
+   margin: var(--margin-card);
 }
 .more p {
-   margin: 20px 21px 20px 20px;
    font-weight: var(--special-font-weight);
    font-size: var(--middle-font-size);
 }
@@ -96,7 +97,6 @@
    flex-direction: column;
    background-color: var(--light-grey);
    border-radius: 20px;
-   margin: var(--margin-standard);
 }
 .popular .choices {
    flex-direction: column;
@@ -127,7 +127,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   margin-top: 50px;
+   margin: var(--margin-border);
 }
 .activities a {
    width: 24%;
@@ -140,11 +140,7 @@
 .activities .head h2 {
    font-weight: var(--special-font-weight);
    font-size: var(--big-font-size);
-   margin-bottom: 34px;
    }
-.activities .choices {
-   margin-bottom: 50px;
-}
 .activities .card-image img {
    width: 100%;
    height: 389px;
@@ -155,4 +151,122 @@
 .activities .card-body {
    height: 50px; 
    justify-content: center;
+}
+@media only screen and (max-width : 1024px)
+{
+   /*stays in marseile*/
+   .staysandpopular {
+      flex-direction: column;
+   }
+   .stays {
+      width: auto;
+   }
+   /*most popular*/
+   .popular {
+      width: auto;
+      margin-top: 50px;
+   }
+   .popular .choices {
+      flex-direction: row;
+   }
+   .popular a {
+      width: 32%;
+   }
+   .popular .card-image img {
+      width: 91.66px;      
+   }
+   .popular .card-body {
+      width: 183.33px;
+   }   
+   /*activities*/
+   .activities .elements-card {
+      height: 267px;
+   }
+   .activities .card-image img {
+      height: 211px;
+   }
+}
+@media only screen and (max-width : 767px)
+{
+   /*cards*/
+   .staysandpopular {
+      flex-direction: column-reverse;
+      margin: 0;
+   }
+   /*stays in marseille*/
+   .stays {
+      background-color: var(--white);
+      border-radius: 0px;
+      margin: 0;
+   }
+   .stays .choices{
+      flex-direction: column;
+   }
+   .stays a {
+      width: 100%;
+   }
+   .stays .card-image img {
+      width: 100%;
+   }
+   .more {
+      margin-top: 0;
+   }
+   /*most popular*/
+   .popular {
+      border-radius: 0px;
+      margin: 0;
+   }
+   .popular .choices {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin: var(--margin-border-mobile);
+   }
+   .popular a {
+      width: 100%;
+   }
+   .popular .elements-card {
+      flex-direction: row;
+      height: 144px;
+   }
+   .popular .card-image img {
+      width: 111.66px;
+      height: 144px;
+      object-fit: cover;
+      border: 5px solid var(--white);
+      border-radius: 20px 0px 0px 20px;
+   }
+   .popular .card-body {
+      width: 223.33px;
+   }
+   .popular .card-body h3 {
+      margin-top: 14px;
+      width: 203.33px;
+   }
+   .popular .card-body p {
+      font-weight: 400;
+      font-size: var(--small-font-size);
+   }   
+   /*activities*/
+   .activities {
+      margin: 0;
+   }
+   .activities .choices {
+      flex-direction: column;
+      margin-top: 0px;
+      margin-bottom: 0px;
+   }
+   .activities a {
+      width: 100%;
+   }
+   .activities .head h2 {
+      margin: 0;
+   }
+   .activities .elements-card {
+      height: 190px;
+      margin-bottom: 24px;
+   }
+   .activities .card-image img {
+      height: 134px;
+   }
 }
