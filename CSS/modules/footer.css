@@ -2,6 +2,7 @@
     background-color: var(--light-grey);
     display: flex;
     margin: var(--margin-border);
+    margin-bottom: 0;
 }
 .footer__body {
     width: 100%;
